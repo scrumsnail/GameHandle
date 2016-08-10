@@ -92,13 +92,13 @@ class ViewController: UIViewController {
          */
         if 0 <= x && y <= 0 {
             if (a > -22.5) {
-                return  "right";
+                return  "right"
             }
             if -67.5 <= a && a <= -22.5 {
-                return  "forwardright";
+                return  "forwardright"
             }
             if a < -67.5 {
-                return  "forward";
+                return  "forward"
             }
         }
         /**
@@ -106,13 +106,13 @@ class ViewController: UIViewController {
          */
         if 0 >= x && y <= 0 {
             if (a < 22.5) {
-                return "left";
+                return "left"
             }
             if 22.5 <= a && a <= 67.5 {
-                return "forwardleft";
+                return "forwardleft"
             }
             if 67.5 < a  {
-                return "forward";
+                return "forward"
             }
         }
         /**
@@ -120,13 +120,13 @@ class ViewController: UIViewController {
          */
         if 0 > x && y > 0 {
             if a > -22.5 {
-                return "left";
+                return "left"
             }
             if -22.5 >= a && a >= -67.5 {
-                return "backwardleft";
+                return "backwardleft"
             }
             if a < 67.5 {
-                return "backward";
+                return "backward"
             }
 
         }
@@ -135,16 +135,16 @@ class ViewController: UIViewController {
          */
         if 0 <= x && y > 0 {
             if a < 22.5 {
-                return "right";
+                return "right"
             }
             if 22.5 <= a && a <= 67.5 {
-                return "backwardright";
+                return "backwardright"
             }
             if a > 67.5 {
-                return "backward";
+                return "backward"
             }
         }
-        return "";
+        return ""
 
 
 
